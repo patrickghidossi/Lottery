@@ -68,7 +68,7 @@
 		firstUserTicket.sort();
 		for(var i = 0; i <firstUserTicket.length; i++){
 			//Push user values to new array if conditions are met, else error
-			if(firstUserTicket[i] < 10 && firstUserTicket[i] != firstUserTicket[i-1]) {
+			if(firstUserTicket[i] <= 10 && firstUserTicket[i] != firstUserTicket[i-1]) {
 				userTicket.push(firstUserTicket[i]);
 			} else {	
 				document.getElementById("message").innerHTML = "Enter a distinct number between 1 and 10";
